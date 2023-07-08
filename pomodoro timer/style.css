@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    /* |^to align children item in center */
+    /* ---align children center */
+    /* display: grid;   
+    place-items: center; */
+}
+
+h1{
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #2c3e50;
+}
+
+#timer{
+    font-size: 72px;
+    color: #2c3e50;
+
+}
+
+button{
+    margin-left:10px;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #ffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: opacity .3s ease-in-out;
+    /* filter: drop-shadow(2px 5px 5px rgb(0, 0, 0)); */
+    box-shadow: 5px 8px 7px rgb(0,0,0,0.7);
+}
+
+#start{
+    background-color: green;
+}
+
+#stop
+{
+    background-color: red;
+}
+
+#reset{
+    background-color: gray;
+}
+
+#start:hover{
+    background-color: white;
+    color: green;
+    /* filter: drop-shadow(2px 5px 5px green); */
+    box-shadow: 2px 5px 5px green;
+}
+
+#stop:hover{
+    background-color: white;
+    color: red;
+    box-shadow: 2px 5px 5px red;
+}
+
+#reset:hover{
+    background-color: white;
+    color: grey;
+    box-shadow: 2px 5px 5px grey;
+}
+
+.container{
+    margin: 5px 0px 0px 5px;
+    min-width: 400px;
+    padding: 20px;
+    width: 400px;
+    height: 500px;
+    /* border: 5px solid  rgba(0,0,0,0.5); */
+    box-shadow: 20px 9px 6px grey;
+    font-family: "Roboto",sans-serif;
+}
+
+
+/* --------box-shadow>>>>>>>>filter:drop-shadow-------------- */
