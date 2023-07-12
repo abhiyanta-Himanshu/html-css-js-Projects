@@ -1,2 +1,2 @@
 # html-css-js-Projects
-Here is some amazing html css projects.
+This is the website for recipes.
