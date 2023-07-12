@@ -22,16 +22,23 @@ function startTimer(){
             timeLeft=12;
             clearInterval(interval);
         }
-    },1000)}
+    },1000)
+    startEl.disabled=true;
+    stopEl.disabled=false;
+}
 
 function resetTimer(){
     timeLeft=12;
     clearInterval(interval);
     timer.innerHTML="25:00";
+    startEl.disabled=false;
+    stopEl.disabled=true;
 }
 
 function stopTimer(){
     clearInterval(interval);
+    startEl.disabled=false;
+    stopEl.disabled=true;
 }
 
 startEl.addEventListener("click",startTimer);
